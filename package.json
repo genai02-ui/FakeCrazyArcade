@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "main": "index.mjs",
   "scripts": {
     "dev": "node local-server.mjs",
     "build": "node scripts/build-static.mjs",
     "preview": "node local-server.mjs",
-    "preview:dist": "node scripts/serve-dist.mjs"
+    "preview:dist": "node scripts/serve-dist.mjs",
+    "start": "node index.mjs"
   },
   "engines": {
     "node": ">=20"
