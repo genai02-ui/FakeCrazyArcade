@@ -1,0 +1,12 @@
+{
+  "buildCommand": "node scripts/build-static.mjs",
+  "outputDirectory": "dist",
+  "installCommand": null,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Pang Arena</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="topbar">
+        <div>
+          <p class="eyebrow">Toy-like water balloon battle</p>
+          <h1>Bubble Pang Arena</h1>
+        </div>
+        <div class="mode-tabs" role="tablist" aria-label="&#44172;&#51076; &#47784;&#46300;">
+          <button id="singleBtn" class="active" type="button">&#44060;&#51064;&#54540;&#47112;&#51060;</button>
+          <button id="multiBtn" type="button">&#47680;&#54000;&#54540;&#47112;&#51060;</button>
+        </div>
+      </section>
+
+      <section class="game-layout">
+        <div class="stage-shell">
+          <canvas id="game" width="720" height="624" aria-label="&#44172;&#51076; &#54868;&#47732;"></canvas>
+          <div id="overlay" class="overlay hidden">
+            <strong id="overlayTitle"></strong>
+            <span id="overlayText"></span>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <div class="stat-row">
+            <span>&#47784;&#46300;</span>
+            <strong id="modeLabel">&#44060;&#51064;&#54540;&#47112;&#51060;</strong>
+          </div>
+          <div class="stat-row">
+            <span>&#49345;&#53468;</span>
+            <strong id="statusLabel">&#51456;&#48708;</strong>
+          </div>
+          <div class="stat-row">
+            <span>&#49884;&#44036;</span>
+            <strong id="timeLabel">03:00</strong>
+          </div>
+          <div class="stat-row">
+            <span>&#51217;&#49549;</span>
+            <strong id="onlineLabel">-</strong>
+          </div>
+
+          <div class="legend needle-panel">
+            <h2>&#48148;&#45720;</h2>
+            <div id="needleStatus" class="needle-list"></div>
+          </div>
+
+          <div class="controls">
+            <button id="restartBtn" type="button">&#45796;&#49884; &#49884;&#51089;</button>
+            <button id="connectBtn" type="button">&#49436;&#48260; &#50672;&#44208;</button>
+          </div>
+
+          <div class="legend">
+            <h2>&#51312;&#51089;</h2>
+            <p>&#51060;&#46041;: &#48169;&#54693;&#53412; &#46608;&#45716; WASD</p>
+            <p>&#47932;&#54413;&#49440;: Space</p>
+            <p>&#48148;&#45720;: Ctrl</p>
+          </div>
+
+          <div class="legend compact">
+            <h2>&#50500;&#51060;&#53596;</h2>
+            <p><span class="dot blue"></span>&#47932;&#54413;&#49440; &#49688; &#51613;&#44032;</p>
+            <p><span class="dot yellow"></span>&#47932;&#51460;&#44592; &#49324;&#44144;&#47532; &#51613;&#44032;</p>
+            <p><span class="dot green"></span>&#51060;&#46041;&#49549;&#46020; &#51613;&#44032;</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="/public/app.mjs"></script>
+  </body>
+</html>

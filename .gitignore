@@ -1,0 +1,9 @@
+dist/
+node_modules/
+.vercel/
+outputs/
+public/assets/downloads/
+public/assets/cozy-pack/
+public/assets/water-sfx/
+public/assets/kenney-interface-sounds/
+*.log
