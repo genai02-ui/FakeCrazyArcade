@@ -10,6 +10,12 @@ Codex 번들 Node를 사용하는 경우:
 & 'C:\Users\user\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' server.mjs
 ```
 
+일반 Node.js가 설치된 환경에서는:
+
+```powershell
+npm run dev
+```
+
 그 후 브라우저에서 엽니다.
 
 ```text

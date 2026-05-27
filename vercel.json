@@ -1,5 +1,5 @@
 {
   "buildCommand": "node scripts/build-static.mjs",
-  "outputDirectory": "dist",
+  "outputDirectory": ".vercel/output/static",
   "installCommand": "echo no install needed"
 }
