@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node server.mjs",
+    "dev": "node local-server.mjs",
     "build": "node scripts/build-static.mjs",
-    "preview": "node server.mjs"
+    "preview": "node local-server.mjs"
   },
   "engines": {
     "node": ">=20"
