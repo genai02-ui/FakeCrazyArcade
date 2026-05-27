@@ -75,9 +75,9 @@ const playerSkins = [
 ];
 
 const playerCharacterSheet = new Image();
-playerCharacterSheet.src = "/public/assets/generated-characters/sailor-direction-sheet-transparent.png";
+playerCharacterSheet.src = "/assets/generated-characters/sailor-direction-sheet-transparent.png";
 const rivalCharacterSheet = new Image();
-rivalCharacterSheet.src = "/public/assets/generated-characters/rival-direction-sheet-transparent.png";
+rivalCharacterSheet.src = "/assets/generated-characters/rival-direction-sheet-transparent.png";
 const characterFrames = {
   down: 0,
   left: 1,
@@ -86,11 +86,11 @@ const characterFrames = {
 };
 
 const sounds = {
-  drop: new Audio("/public/assets/sounds/water-bubble.ogg"),
-  splash: new Audio("/public/assets/sounds/water-splash.ogg"),
-  pop: new Audio("/public/assets/sounds/bubble-pop.ogg"),
-  click: new Audio("/public/assets/sounds/ui-click.ogg"),
-  item: new Audio("/public/assets/sounds/item-confirm.ogg"),
+  drop: new Audio("/assets/sounds/water-bubble.ogg"),
+  splash: new Audio("/assets/sounds/water-splash.ogg"),
+  pop: new Audio("/assets/sounds/bubble-pop.ogg"),
+  click: new Audio("/assets/sounds/ui-click.ogg"),
+  item: new Audio("/assets/sounds/item-confirm.ogg"),
 };
 
 for (const sound of Object.values(sounds)) {
@@ -586,3 +586,4 @@ function loop(now) {
 
 connectBtn.disabled = true;
 requestAnimationFrame(loop);
+

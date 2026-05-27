@@ -29,10 +29,11 @@ let endedAt = 0;
 
 const httpServer = createServer((req, res) => {
   const url = new URL(req.url ?? "/", `http://localhost:${PORT}`);
-  const requested = url.pathname === "/" ? "/public/index.html" : url.pathname;
-  const filePath = normalize(join(ROOT, requested));
+  const requested = url.pathname === "/" ? "/index.html" : url.pathname;
+  const baseDir = requested.startsWith("/src/") ? ROOT : join(ROOT, "public");
+  const filePath = normalize(join(baseDir, requested));
 
-  if (!filePath.startsWith(ROOT) || !existsSync(filePath)) {
+  if (!filePath.startsWith(baseDir) || !existsSync(filePath)) {
     res.writeHead(404);
     res.end("Not found");
     return;
