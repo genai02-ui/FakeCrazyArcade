@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node local-server.mjs",
     "build": "node scripts/build-static.mjs",
-    "preview": "node local-server.mjs"
+    "preview": "node local-server.mjs",
+    "preview:dist": "node scripts/serve-dist.mjs"
   },
   "engines": {
     "node": ">=20"
